@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Box, Typography, TextField, Button, Grid, Alert } from "@mui/material";
 import SaveIcon from "@mui/icons-material/Save";
 import CancelIcon from "@mui/icons-material/Cancel";
-import { User } from "../types/User";
+import { type User } from "../types/User";
 
 interface EditUserFormProps {
   user: User;
@@ -99,13 +99,13 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
 
       <Grid container spacing={3} sx={{ mt: 1 }}>
         {/* Basic Information */}
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <Typography variant="h6" gutterBottom>
             Basic Information
           </Typography>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Full Name"
@@ -117,7 +117,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Username"
@@ -127,7 +127,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Email"
@@ -140,7 +140,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Phone"
@@ -152,7 +152,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <TextField
             fullWidth
             label="Website"
@@ -162,13 +162,13 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
         </Grid>
 
         {/* Address */}
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <Typography variant="h6" gutterBottom>
             Address
           </Typography>
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Street"
@@ -177,7 +177,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Suite"
@@ -186,7 +186,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="City"
@@ -195,7 +195,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid size={{ xs: 12, md: 6 }}>
           <TextField
             fullWidth
             label="Zipcode"
@@ -205,13 +205,13 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
         </Grid>
 
         {/* Company */}
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <Typography variant="h6" gutterBottom>
             Company
           </Typography>
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <TextField
             fullWidth
             label="Company Name"
@@ -220,7 +220,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
           />
         </Grid>
 
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <TextField
             fullWidth
             label="Catch Phrase"
@@ -232,7 +232,7 @@ const EditUserForm: React.FC<EditUserFormProps> = ({
         </Grid>
 
         {/* Actions */}
-        <Grid item xs={12}>
+        <Grid size={{ xs: 12 }}>
           <Box sx={{ display: "flex", gap: 2, justifyContent: "flex-end" }}>
             <Button
               variant="outlined"

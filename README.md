@@ -91,19 +91,19 @@ npm ≥ 8
 IMPORTANT: Start in this exact order!
 Terminal 1 - User List (MUST START FIRST)
 bashcd user-dashboard/user-list
-npm run dev
+npm run start-mf
 ✅ Wait for: Local: http://localhost:3001/
 
 Terminal 2 - User Details (START SECOND)
 bashcd user-dashboard/user-details
 npm i
-npm run dev
+npm run start-mf
 ✅ Wait for: Local: http://localhost:3002/
 
 Terminal 3 - Shell (START LAST)
 bashcd user-dashboard/shell
 npm i
-npm run dev
+npm run start-mf
 ✅ Wait for: Local: http://localhost:3000/
 
 # => Alternativly run the app in once navigate to root /user-dashboard
